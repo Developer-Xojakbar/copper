@@ -1,0 +1,171 @@
+.form-container {
+    margin-top: 56px;
+    padding: 140px 0px 45px;
+    background: linear-gradient(to right, white 0%, white 50%, #311d40 50%, #311d40 100%);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    &__context {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        &-h {
+            font-size: 2em;
+            line-height: 50px;
+        }
+
+        &-subtitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        &__sign {
+            position: relative;
+
+            &-google {
+                padding: 10px 0px;
+                text-align: center;
+                display: block;
+                background: #FCFEFF;
+                border: 1px solid #B0B7BA;
+                box-sizing: border-box;
+                border-radius: 4px;
+                text-decoration: none;
+                color: #FF3465;
+                font-weight: 500;
+                line-height: 26px;
+                cursor: pointer;
+
+                &-icon {
+                    width: 24px;
+                    display: inline-block;
+                    height: 24px;
+                    vertical-align: bottom;
+                    margin-right: 5px;
+                }
+
+                &-text {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    letter-spacing: 0.21875px;
+                    color: #3C3F40;
+                }
+            }
+
+            &-subtext {
+                text-align: center;
+                font-size: 12px;
+                line-height: 14px;
+                margin: 17px 0px 9px;
+            }
+
+            &-inputs {
+                position: relative;
+                margin: 18px 0px 22px;
+
+                &-label {
+                    display: block;
+                    padding: 5px;
+                    margin-left: 10px;
+                    margin-bottom: 0.5rem;
+                    font-size: 12px;
+                    line-height: 14px;
+                    position: absolute;
+                    top: -13px;
+                    background-color: white;
+                }
+
+                &-input {
+                    padding: 20px 15px 11px;
+                    display: block;
+                    font-size: 14px;
+                    line-height: 17px;
+                    width: 100%;
+                    border: 1px solid #D9D9D9;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    overflow: visible;
+                    font-family: inherit;
+                }
+            }
+
+            &-submit {
+                cursor: pointer;
+                width: 100%;
+                background: #FF3465;
+                border-radius: 25px;
+                color: white;
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+                padding: 16px;
+                text-align: center;
+                letter-spacing: 0.21875px;
+                overflow: visible;
+            }
+        }
+
+        &__disclaimer {
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            margin: 16px 0;
+
+            > a {
+                text-decoration: none;
+                color: $color-red-bckg;
+                font-weight: 500;
+                line-height: 26px;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $color-red-hover2;
+                }
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        > img {
+            left: inherit;
+            max-width: 465px !important;
+            right: -5%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120% !important;
+        }
+    }
+}
