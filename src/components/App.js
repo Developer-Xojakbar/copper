@@ -1,10 +1,13 @@
 import React from 'react';
+import Nav from './Nav';
+import Form from './Form';
 
 const App = () => {
     return (
-        <div>
-            Basic-start
-        </div>
+        <React.Fragment>
+            <Nav />
+            <Form />
+        </React.Fragment>
     );
 };
 

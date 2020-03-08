@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    .container {
+        > * {
+            max-width: 720px;
+        }
+    }
+
+    .nav-banner {
+        &__text {
+            display: flex;
+        }
+    }
+
+    .nav {
+        &__container {
+            &__utility {
+                &-try_free {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

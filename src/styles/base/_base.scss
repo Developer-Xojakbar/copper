@@ -2,13 +2,53 @@
 *,
 *::after,
 *::before {
-    
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-    
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 20px;
 }
 
 body {
-    
+    display: block;
+    font-family: "Graphik-Regular";
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color-grayscale-62;
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+    background-color: white;
+    transition: all 0.25s ease 0s;
+
+    height: 10000px;
+}
+
+.container {
+    width: 100%;
+
+    > * {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/******************elements********************/
+
+img {
+    vertical-align: middle;
+    border-style: none;
 }

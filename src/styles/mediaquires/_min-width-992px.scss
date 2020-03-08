@@ -1,0 +1,219 @@
+@media (min-width: 992px) {
+    .container {
+        > * {
+            max-width: 960px;
+        }
+    }
+
+    .container > .nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
+        -webkit-box-shadow: 0 6px 20px 0 rgba(60,63,64,0.07);
+        box-shadow: 0 6px 20px 0 rgba(60,63,64,0.07);
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .nav {
+        &__container {
+            display: flex;
+
+            &__logo {
+                width: 220px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            &__links {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                list-style: none;
+                font-family: 'Graphik-Medium';
+                font-size: 14px;
+                padding: 0;
+                margin: 0;
+                line-height: 20px;
+                -webkit-box-flex: 2;
+                -ms-flex: 2;
+                flex: 2;
+                z-index: 2;
+                min-height: 100px;
+
+                &-why_copper,
+                &-industry,
+                &-resources {
+                    line-height: 100px;
+                    cursor: pointer;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-right: 40px;
+                    position: relative;
+
+                    > .icon {
+                        transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+                        vertical-align: middle;
+                        width: 6px;
+                        height: 4px;
+                        margin-left: 5px;
+                    }
+
+                    &:hover:after {
+                        height: 4px;
+                        position: absolute;
+                        left: 0;
+                        content: '';
+                        width: 100%;
+                        -webkit-box-shadow: 0px 4px 0px 0px #ff3465;
+                        box-shadow: 0px 4px 0px 0px #ff3465;
+                        bottom: 4px;
+                        -webkit-transition: all ease-in-out 0.15s;
+                        transition: all ease-in-out 0.15s;
+                    }
+                }
+
+                &-why_copper.active,
+                &-industry.active,
+                &-resources.active {
+                    > .icon {
+                        position: relative;
+                        left: 1px;
+                        transform: rotate(180deg);
+                    }
+
+                    &:after {
+                        height: 4px;
+                        position: absolute;
+                        left: 0;
+                        content: '';
+                        width: 100%;
+                        -webkit-box-shadow: 0px 4px 0px 0px #ff3465;
+                        box-shadow: 0px 4px 0px 0px #ff3465;
+                        bottom: 4px;
+                        -webkit-transition: all ease-in-out 0.15s;
+                        transition: all ease-in-out 0.15s;
+                    }
+                }
+
+                &-pricing,
+                &-demos {
+                    display: block;
+                    color: $color-grayscale-62;
+                    margin-right: 40px;
+                }
+            }
+
+            &__utility {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+
+                &-login {
+                    margin-right: 18px;
+                    font-family: 'Graphik-Medium';
+                    font-size: 14px;
+                    color: $color-red-bckg;
+                    line-height: 20px;
+                }
+            }
+
+            &__dropdown-why_copper,
+            &__dropdown-industry,
+            &__dropdown-resources {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: grid;
+                grid-template-columns: repeat(3 , 1fr);
+                grid-template-rows: 1fr;
+                visibility: hidden;
+                position: absolute;
+                padding: 50px;
+                opacity: 0;
+                -webkit-transition: all ease-in-out 0.15s;
+                transition: all ease-in-out 0.15s;
+                transform: translateY(calc(100% - 25px));
+                background-color: #fff;
+                box-shadow: 0 6px 20px 0 rgba(60,63,64,0.07);
+                bottom: 0;
+                width: 100%;
+                max-width: 1200px;
+                margin-left: -45px;
+
+                .item {
+                    display: flex;
+                    -webkit-box-align: start;
+                    -ms-flex-align: start;
+                    align-items: flex-start;
+                    padding: 0;
+                    list-style: none;
+                    margin-right: 100px;
+                    font-family: "Graphik-Medium";
+                    font-size: 14px;
+                    color: $color-grayscale-62;
+                    line-height: 20px;
+                    margin-bottom: 40px;
+                    transition: color 0.1s ease-in-out;
+                    text-decoration: none;
+                    font-weight: 500;
+                    cursor: pointer;
+                    background-color: transparent;
+
+                    &__icon {
+                        width: 35px;
+                        margin-right: 13px;
+                        margin-bottom: -3px;
+                    }
+                    
+                    &__text {
+                        &-black {
+                            margin-bottom: 4px;
+                        }    
+                        &-gray {
+                            font-size: 14px;
+                            color: $color-grayscale-178;
+                            line-height: 21px;
+                            font-family: "Graphik-Regular";
+                        }
+                    }
+                }
+
+                .item:hover .item__text-black {
+                    color: $color-red-bckg;
+                }
+            }
+
+            &__dropdown-why_copper.active,
+            &__dropdown-industry.active,
+            &__dropdown-resources.active {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(100%);
+            }
+            
+        }
+    }
+}
