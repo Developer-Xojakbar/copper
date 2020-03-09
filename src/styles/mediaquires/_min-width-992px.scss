@@ -222,4 +222,21 @@
             padding: 120px 0 120px;
         }
     }
+
+    .md_banner {
+        &-background {
+            margin: 0 auto;
+            display: block;
+        }
+
+        &__context {
+            padding: 120px 0;
+        }
+    }
+
+    .crm {
+        > * {
+            padding-bottom: 120px;
+        }
+    }
 }

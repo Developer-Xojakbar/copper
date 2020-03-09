@@ -90,4 +90,74 @@
             }
         }
     }
+
+    .md_banner {
+        &__context {
+            -webkit-box-flex: 0;
+            flex: 0 0 66.66667%;
+            max-width: 66.66667%;
+
+            &-h {
+                -webkit-box-flex: 0;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            &-text {
+                -webkit-box-flex: 0;
+                flex: 0 0 83.33333%;
+                max-width: 83.33333%;
+            }
+
+            &__buttons {
+                display: block;
+
+                > * {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .crm-container {
+        padding: 120px 0 120px;
+    }
+
+    .crm {
+        &-col {
+            -webkit-box-flex: 0;
+            flex: 0 0 66.66667%;
+            max-width: 66.66667%;
+        }
+
+        &__item {
+            &-image {
+                -webkit-box-flex: 0;
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                &-col {
+                    display: inline-block;
+                    max-width: 100%;
+                    padding: 0;
+                    margin: 40px 0px 0px;
+                }
+            }
+
+            &__context {
+                -webkit-box-flex: 0;
+                flex: 0 0 41.66667%;
+                max-width: 41.66667%;
+            }
+
+            &-image.float-left {
+                margin-right: 8.33333%;
+            }
+
+            &-image.float-right {
+                margin-left: 8.33333%;
+                order: 2;
+            }
+        }
+    }
 }

@@ -1,0 +1,83 @@
+.crm-container {
+    padding: 60px 0 60px;
+    padding-bottom: 138px !important;
+}
+
+.crm {
+    > * {
+        padding-bottom: 60px;
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    &-col {
+        text-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &__item {
+        &-image {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            &-col {
+                transition: all 500ms linear;
+                transform: translate3d(0px, 100px, 0px);
+                position: relative;
+                padding: 0;
+                margin: 7%;
+                margin-top: 60px;
+                max-width: 60vw;
+                margin-left: auto;
+                margin-right: auto;
+                float: none;
+                display: block;
+                opacity: 0;
+
+                > img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 10;
+                    max-width: 100% !important;
+                    box-shadow: none !important;
+                    object-position: center left;
+                }
+            }
+
+            &-col.visible {
+                opacity: 1;
+                transform: translate3d(0px, 0px, 0px);
+            }
+        }
+
+        &__context {
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            &-col-text {
+                font-size: 20px;
+                line-height: 30px;
+                margin: 16px 0;
+            }
+        }
+    }
+}

@@ -30,6 +30,7 @@ body {
     text-align: left;
     background-color: white;
     transition: all 0.25s ease 0s;
+    overflow-x: hidden;
 
     height: 10000px;
 }
@@ -61,7 +62,7 @@ h1 {
     margin: 0 !important;
 }
 
-h1 {
+h2 {
     font-family: "Graphik-Medium";
     font-weight: 500;
     font-size: 40px;
