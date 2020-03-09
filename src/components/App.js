@@ -4,6 +4,7 @@ import Form from './Form';
 import Inbox from './Inbox';
 import MdBanner from './MdBanner';
 import CRM from './CRM';
+import ItBrand from './ItBrand';
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <Inbox />
             <MdBanner />
             <CRM />
+            <ItBrand />
         </React.Fragment>
     );
 };

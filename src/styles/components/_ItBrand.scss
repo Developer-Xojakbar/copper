@@ -1,0 +1,124 @@
+.it_brand-container {
+    margin-top: 0px;
+    min-height: 600px;
+    overflow: visible;
+    color: #FFF;
+    margin: 60px 0 60px;
+    margin-bottom: 0px;
+    z-index: 1;
+    background: linear-gradient(90deg ,#14236E 0% , #14236E 65% , transparent 65%);
+}
+
+.it_brand {
+    &__col {
+        z-index: 10;
+        padding: 90px 0 90px;
+        position: relative;
+        min-height: 600px;
+        width: 100%;
+        // padding-right: 15px;
+        // padding-left: 15px;
+        // margin-right: -15px;
+        // margin-left: -15px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+
+        > * {
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        &__context {
+            &-pre {
+                margin-left: 0px;
+                text-align: left;
+                color: #FFF;
+                margin-bottom: 16px !important;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 500;
+                overflow-y: hidden;
+                margin-top: 0;
+                overflow: auto;
+
+                &:before {
+                    display: block;
+                    border-bottom: 2px solid #FFF;
+                    content: '';
+                    margin-right: 8px;
+                    width: 34px;
+                    position: relative;
+                    float: left;
+                    top: 10px;
+                    height: 2px;
+                }
+            }
+            &__col {
+                top: 0px;
+                color: #3C3F40;
+                padding: 0;
+                padding-right: 40px;
+                padding-top: 30px;
+                padding-left: 0px !important;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                justify-content: center;
+
+                &-h,
+                &-text-1 {
+                    color: white;
+                }
+
+                &-text-1 {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin: 16px 0;
+                }
+
+                &-text-2 {
+                    font-style: normal;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: white;
+                }
+
+                &-brend {
+                    margin-top: 20px;
+                    width: auto;
+                    max-width: 140px;
+                    max-height: 40px;
+                }
+            }
+        }
+
+        &-image {
+            text-align: center;
+            -webkit-box-align: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+
+            > img {
+                object-fit: cover;
+                position: absolute !important;
+                top: 0px !important;
+                left: 0px !important;
+                max-width: 120% !important;
+                width: 95% !important;
+                max-height: none !important;
+                box-shadow: none !important;
+            }
+        }
+    }
+}

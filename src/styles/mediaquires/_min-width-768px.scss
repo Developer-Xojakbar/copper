@@ -160,4 +160,35 @@
             }
         }
     }
+
+    .it_brand-container {
+        margin: 0 0 65px;
+    }
+
+    .it_brand {
+        &__col {
+            -webkit-box-flex: 0;
+            flex: 0 0 calc(91.66667% + 30px);
+            max-width: calc(91.66667% + 30px);
+
+            > * {
+                -webkit-box-flex: 0;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            &__context {
+                &__col {
+                    padding-left: 5%;
+                    padding-top: 0;
+                }
+            }
+
+            &-image {
+                > img {
+                    height: auto;
+                }
+            }
+        }
+    }
 }
