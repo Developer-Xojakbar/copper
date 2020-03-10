@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const Form = () => {
     const [{ fullName, email }, setForm] = useState({}); 
     
-    const handleFormClick = (value , newState) => {
+    const handleFormChange = (value , newState) => {
         setForm(prevState => ({ ...prevState, [newState]: value }));
     }
 
@@ -30,7 +30,7 @@ const Form = () => {
                             <label className="form__context__sign-inputs-label" htmlFor="user[full_name]">Full Name</label>
                             <input
                                 className="form__context__sign-inputs-input"
-                                onChange={(e) => handleFormClick(e.target.value , "fullName")}
+                                onChange={(e) => handleFormChange(e.target.value , "fullName")}
                                 type="text"
                                 size="30"
                                 placeholder="Jane Doe"
@@ -42,7 +42,7 @@ const Form = () => {
                             <label className="form__context__sign-inputs-label" htmlFor="user[email]">Work Email</label>
                             <input
                                 className="form__context__sign-inputs-input"
-                                onChange={(e) => handleFormClick(e.target.value , "email")}
+                                onChange={(e) => handleFormChange(e.target.value , "email")}
                                 type="email"
                                 size="30"
                                 placeholder="janedoe@example.com"

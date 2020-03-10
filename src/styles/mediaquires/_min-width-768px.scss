@@ -191,4 +191,53 @@
             }
         }
     }
+
+    .tools-container {
+        padding: 120px 0 120px;
+    }
+
+    .tools {
+        &__top {
+            &-h {
+                -webkit-box-flex: 0;
+                flex: 0 0 66.66667%;
+                max-width: 66.66667%;
+            }
+        }
+
+        &__items {
+            &-item {
+                -webkit-box-flex: 0;
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+            }
+        }
+    }
+
+    .btm_banner {
+        padding-top: 80px;
+        height: 600px;
+        padding-bottom: 80px;
+        text-align: left;
+
+        &-image {
+            display: block;
+        }
+
+        &__col {
+            &__context {
+                -webkit-box-flex: 0;
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                &__buttons {
+                    display: block;
+
+                    > * {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }

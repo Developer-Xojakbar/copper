@@ -5,6 +5,8 @@ import Inbox from './Inbox';
 import MdBanner from './MdBanner';
 import CRM from './CRM';
 import ItBrand from './ItBrand';
+import Tools from './Tools';
+import BtmBanner from './BtmBanner';
 
 const App = () => {
     return (
@@ -15,6 +17,8 @@ const App = () => {
             <MdBanner />
             <CRM />
             <ItBrand />
+            <Tools />
+            <BtmBanner />
         </React.Fragment>
     );
 };
