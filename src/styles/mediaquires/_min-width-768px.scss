@@ -170,6 +170,7 @@
             -webkit-box-flex: 0;
             flex: 0 0 calc(91.66667% + 30px);
             max-width: calc(91.66667% + 30px);
+            margin-left: -15px;
 
             > * {
                 -webkit-box-flex: 0;
@@ -236,6 +237,83 @@
                     > * {
                         margin-bottom: 0;
                     }
+                }
+            }
+        }
+    }
+
+    .footer-container {
+        padding: 60px 0 50px;
+    }
+
+    .footer {
+        flex-wrap: nowrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+
+        &__company {
+            flex-basis: 50%;
+
+            &__context {
+                &-link {
+                    line-height: 64px;
+                }
+
+                &-address {
+                    display: block;
+                }
+            }
+
+            &__icons {
+                display: block !important;
+                flex-basis: 50%;
+            }
+        }
+
+        &__social {
+            &__items {
+                padding-top: 20px;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                flex-direction: row;
+
+                &__item {
+                    width: 33%;
+                    padding-right: 28px;
+                    margin-bottom: 44px;
+
+                    &-h {
+                        cursor: initial;
+                        border-bottom: none;
+                    }
+
+                    &-link {
+                        display: flex;
+                    }
+                }
+            }
+
+            &__created {
+                font-size: 13px;
+                line-height: 18px;
+                //display: block;
+                margin-top: 2px;
+
+                &-text-1 {
+                    flex-basis: 50%;
+                    padding-right: 25px;
+                }
+
+                &-text-2 {
+                    flex-basis: 25%;
+                }
+
+                &-link {
+                    flex-basis: 12.5%;
+                    line-height: 18px;
                 }
             }
         }

@@ -7,6 +7,7 @@ import CRM from './CRM';
 import ItBrand from './ItBrand';
 import Tools from './Tools';
 import BtmBanner from './BtmBanner';
+import Footer from './Footer';
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
             <ItBrand />
             <Tools />
             <BtmBanner />
+            <Footer />
         </React.Fragment>
     );
 };

@@ -1,0 +1,156 @@
+.footer-container {
+    background-color: #321E41;
+    color: #fff;
+    padding: 50px 0 0px;
+}
+
+.footer {
+    display: flex;
+
+    &__company {
+        position: relative;
+        margin-bottom: 0;
+        padding-right: 15px;
+
+        &__context {
+            &-link {
+                display: flex;
+                width: min-content;
+                font-size: 48px;
+                font-family: "Graphik-Medium";
+                font-weight: 500;
+                line-height: 48px;
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover {
+                    color: #FF3465;
+                }
+            }
+
+            &-address {
+                display: none;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                font-style: normal;
+                line-height: inherit;
+            }
+        }
+
+        &__icons {
+            display: none !important;
+            position: absolute;
+            bottom: 0;
+            margin-top: 3px;
+            margin-bottom: 20px;
+
+            &-link {
+                margin-right: 0;
+                text-decoration: none;
+                padding-right: 10px;
+                fill: white;
+                font-weight: 500;
+                line-height: 26px;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover {
+                    fill: #FF3465 ;
+                }
+            }
+        }
+    }
+
+    &__social {
+        &__items {
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+
+            &__item {
+                min-width: 153px;
+                font-size: 14px;
+                padding: 0;
+                font-family: "Graphik-Medium";
+                margin-top: 0;
+
+                &-h {
+                    display: block;
+                    cursor: pointer;
+                    border-bottom: thin solid #5B4B67;
+                    position: relative;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+
+                &-link {
+                    width: max-content;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: "Graphik-Regular";
+                    list-style: none;
+                    display: none;
+                    color: white;
+                    text-decoration: none;
+                    line-height: 26px;
+                    cursor: pointer;
+                    background-color: transparent;
+
+                    &:hover {
+                        color: #FF3465;
+                    }
+                }
+            }
+        }
+
+        &__created {
+            background-color: #321E41;
+            height: auto;
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            //align-items: center;
+            padding-top: 10px;
+            font-size: 16px;
+            line-height: 28px;
+            margin-top: 18px;
+
+            &-text-1 {
+                flex-basis: 100%;
+                margin-bottom: 19px;
+                color: #FFF;
+                padding: 4px 10px 4px 0px;
+            }
+
+            &-text-2 {
+                flex-basis: 50%;
+                margin-bottom: 19px;
+                color: #FFF;
+                padding: 4px 10px 4px 0px;
+            }
+
+            &-link {
+                color: #FFF;
+                padding: 4px 0;
+                flex-basis: 25%;
+                text-decoration: none;
+                font-weight: 500;
+                line-height: 26px;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover {
+                    color: #FF3465;
+                }
+            }
+        }
+    }
+}
