@@ -1,7 +1,7 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <!-- /////////////////////////////////////////// -->
-<symbol id="icon-copper_logo" width="137px" height="27px" viewBox="0 0 137 27">
+<symbol id="icon-copper_logo" viewBox="0 0 137 27">
     <title>Copper_logo</title>
     <svg width="137px" height="27px" viewBox="0 0 137 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs></defs>
@@ -91,6 +91,36 @@
     </g>
 </g>
 </symbol>
+<!-- /////////////////////////////////////////// -->
+<symbol id="icon-arrow_left" viewBox="0 0 16 8">
+<title>Arrow</title>
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="baseline-arrow_right_alt-24px" transform="translate(-4.000000, -8.000000)">
+        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+        <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) " points="16.01 11 4 11 4 13 16.01 13 16.01 16 20 12 16.01 8"></polygon>
+    </g>
+</g>
+</symbol>
+<!-- /////////////////////////////////////////// -->
+<symbol id="icon-arrow_right" width="16px" height="8px" viewBox="0 0 16 8">
+<title>Arrow</title>
+<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="baseline-arrow_right_alt-24px" transform="translate(-4.000000, -8.000000)">
+        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+        <polygon id="Shape" fill="#FF3465" fill-rule="nonzero" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) " points="16.01 11 4 11 4 13 16.01 13 16.01 16 20 12 16.01 8"></polygon>
+    </g>
+</g>
+</symbol>
+<!-- /////////////////////////////////////////// -->
+<!-- <symbol id="icon-test" viewBox="0 0 20 20">
+<title>Test</title>
+<path d=""></path>
+</symbol> -->
+<!-- /////////////////////////////////////////// -->
+<!-- <symbol id="icon-test" viewBox="0 0 20 20">
+<title>Test</title>
+<path d=""></path>
+</symbol> -->
 <!-- /////////////////////////////////////////// -->
 <!-- <symbol id="icon-test" viewBox="0 0 20 20">
 <title>Test</title>

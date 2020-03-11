@@ -1,0 +1,25 @@
+@media (max-width: 767.98px) {
+    .nav-banner {
+        display: none;
+    }
+
+    .mobile__nav_banner {
+        display: flex;
+
+        &-text{
+            font-size: 16px;
+        }
+
+        &-link {
+            font-size: 14px;
+        }
+    }
+
+    .mobile_nav {
+        top: 75px;
+    }
+
+    .mobile__overlay {
+        top: 75px;
+    }
+}

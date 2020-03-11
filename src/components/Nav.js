@@ -6,6 +6,7 @@ import IconSVG from './IconSVG';
 
 const Nav = () => {
     const [dropdown, setDropdown] = useState("");
+    const [hamburger, setMobileDrop] = useState("");
 
     const handleDropdown = (value) => {
         if (dropdown !== value) {
@@ -21,11 +22,15 @@ const Nav = () => {
                 <p className="nav-banner__text">Still using your inbox to keep track of customer conversations? There's a better way.</p>
                 <a className="nav-banner__link" href="#">See how</a>
             </div>
+            <div className="mobile__nav_banner">
+                <p className="mobile__nav_banner-text">Meet your simple, intuitive CRM.</p>
+                <a className="mobile__nav_banner-link">Try Free</a>
+            </div>
             <div className="nav container">
                 <div className="nav__container">
                     <div className="nav__container__logo">
                         <a href="#">
-                            <IconSVG className="" iconName="icon-copper_logo" />
+                            <IconSVG className="copper_logo" iconName="icon-copper_logo" />
                         </a>
                     </div>
                     <div className="nav__container__links">
@@ -149,6 +154,81 @@ const Nav = () => {
                                 <p className="item__text-gray">Use our API to integrate Copper with other apps.</p>
                             </div>
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div className={"mobile__nav " + (hamburger === "active" && dropdown !== "" ? "col" : "")}>
+                <a className="mobile__nav-logo" href="#"><IconSVG className="" iconName="icon-copper_logo" /></a>
+                <div className="mobile__nav-arrow" onClick={() => {setDropdown("");}}><IconSVG className="arrow" iconName="icon-arrow_left" /></div>
+                <div className={"mobile__nav-hamburger " + hamburger}
+                    onClick={() => {
+                        if (hamburger === "") {
+                            setMobileDrop("active");
+                            document.querySelector("body").classList.add("stop_scrolling");
+                        } else {
+                            setMobileDrop("");
+                            document.querySelector("body").classList.remove("stop_scrolling");
+                        }
+                        setDropdown("");
+                    }}
+                >
+                    <span className={hamburger === "active" && dropdown !== "" ? "white" : ""}></span>
+                    <span className={hamburger === "active" && dropdown !== "" ? "white" : ""}></span>
+                    <span className={hamburger === "active" && dropdown !== "" ? "white" : ""}></span>
+                    <span className={hamburger === "active" && dropdown !== "" ? "white" : ""}></span>
+                    <span className={hamburger === "active" && dropdown !== "" ? "white" : ""}></span>
+                    <span className={hamburger === "active" && dropdown !== "" ? "white" : ""}></span>
+                </div>
+            </div>
+            <div className={"mobile__overlay " + hamburger}>
+                <div className="mobile__overlay__menu">
+                    <div className="mobile__overlay__menu-why_copper" onClick={() => { handleDropdown("why_copper");}}>
+                        <p className="mobile__overlay__menu-why_copper-text">Why Copper</p>
+                        <IconSVG className="arrow" iconName="icon-arrow_right" />
+                    </div>
+                    <div className="mobile__overlay__menu-industry">
+                        <p className="mobile__overlay__menu-industry-text" onClick={() => { handleDropdown("industry");}}>Industry</p>
+                        <IconSVG className="arrow" iconName="icon-arrow_right" />
+                    </div>
+                    <div className="mobile__overlay__menu-pricing">
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div className="mobile__overlay__menu-demos">
+                        <a href="#">Demos</a>
+                    </div>
+                    <div className="mobile__overlay__menu-resources" onClick={() => { handleDropdown("resources");}}>
+                        <p className="mobile__overlay__menu-resources-text">Resources</p>
+                        <IconSVG className="arrow" iconName="icon-arrow_right" />
+                    </div>
+                    <div className="mobile__overlay__menu__buttons">
+                        <a className="mobile__overlay__menu__buttons-try_free" href="#">Try Free</a>
+                        <a className="mobile__overlay__menu__buttons-login" href="#">Login</a>
+                    </div>
+                </div>
+                <div className="mobile__overlay__col">
+                    <div className={"mobile__overlay__col__why_copper " + (dropdown === "why_copper" ? "active" : "")}>
+                        <p className="mobile__overlay__col__why_copper-title">Why Copper</p>
+                        <a className="mobile__overlay__col__why_copper-link">Organize Contacts</a>
+                        <a className="mobile__overlay__col__why_copper-link">Get Reports</a>
+                        <a className="mobile__overlay__col__why_copper-link">Track Deals</a>
+                        <a className="mobile__overlay__col__why_copper-link">Automate Tasks</a>
+                        <a className="mobile__overlay__col__why_copper-link">Security and Privacy</a>
+                    </div>
+                    <div className={"mobile__overlay__col__industry " + (dropdown === "industry" ? "active" : "")}>
+                        <p className="mobile__overlay__col__industry-title">Industry</p>
+                        <a className="mobile__overlay__col__industry-link">Agencies</a>
+                        <a className="mobile__overlay__col__industry-link">Consulting</a>
+                        <a className="mobile__overlay__col__industry-link">Technology</a>
+                        <a className="mobile__overlay__col__industry-link">Real Estate</a>
+                        <a className="mobile__overlay__col__industry-link">Corporate Development</a>
+                    </div>
+                    <div className={"mobile__overlay__col__resources " + (dropdown === "resources" ? "active" : "")}>
+                        <p className="mobile__overlay__col__resources-title">Resources</p>
+                        <a className="mobile__overlay__col__resources-link">Library</a>
+                        <a className="mobile__overlay__col__resources-link">Product Updates</a>
+                        <a className="mobile__overlay__col__resources-link">Blog</a>
+                        <a className="mobile__overlay__col__resources-link">Developers</a>
+                        <a className="mobile__overlay__col__resources-link">Help Center</a>
                     </div>
                 </div>
             </div>

@@ -66,8 +66,67 @@
     }
 }
 
+.mobile__nav_banner {
+    background: rgb(255, 52, 101);
+    display: none;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+
+    &-text {
+        font-size: 16px;
+        color: #FFFFFF;
+        margin: 0px;
+        text-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        display: flex;
+        width: 60%;
+        text-align: left;
+    }
+
+    &-link {
+        margin-right: 0px;
+        padding: 10px 20px;
+        margin-bottom: 0px;
+        background: transparent;
+        border: 1px solid #FFF;
+        box-shadow: none;
+        border-radius: 100px;
+        font-family: "Graphik-Medium";
+        font-size: 14px;
+        color: #FFF;
+        text-align: center;
+        display: inline-flex;
+        line-height: 14px;
+        text-decoration: none;
+        transition: all ease-in-out 0.2s;
+        margin-left: 0;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+            background: #ff4874;
+            border-color: #ff4874;
+            color: #FFF;
+            box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
+
 .nav {
     transition: top 0.3s;
+    height: 60px;
+    display: none;
 
     &__container {
         &__logo {
@@ -147,4 +206,296 @@
             }
         }
     }
+}
+
+.mobile__nav {
+    transition: top 0.3s;
+    display: block;
+    height: 60px;
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    z-index: 105;
+    box-shadow: 0 6px 20px 0 rgba(60,63,64,0.07);
+    padding: 0;
+
+    &-logo {
+        display: flex;
+        position: absolute;
+        top: 22px;
+        left: 3px;
+        z-index: 10;
+        opacity: 1;
+        transition: all 0.22s ease-in-out;
+
+        > .icon {
+            height: 21px;
+            width: 137px;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+    }
+
+    &-arrow {
+        display: inline-block;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 27px;
+        top: 15px;
+        z-index: 10;
+
+        > .icon {
+            height: 12px;
+            width: 32px;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+    }
+
+    &-hamburger {
+        z-index: 10;
+        width: 24px;
+        height: 18px;
+        position: absolute;
+        top: 21px;
+        right: 15px;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        > span {
+            left: 0px;
+            border-radius: 20px 0 0 20px;
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 50%;
+            background: #FF3465;
+            opacity: 1;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        > span:nth-child(odd) {
+            left: 0px;
+            border-radius: 20px 0 0 20px;
+        }
+
+        > span:nth-child(even) {
+            left: 50%;
+            border-radius: 0 20px 20px 0;
+        }
+
+        > span:nth-child(1),
+        > span:nth-child(2) {
+            top: 0;
+        }
+
+        > span:nth-child(3),
+        > span:nth-child(4) {
+            top: 8px;
+        }
+
+        > span:nth-child(5),
+        > span:nth-child(6) {
+            top: 16px;
+        }
+
+        > span.white {
+            background: white;
+        }
+    }
+
+    &-hamburger.active {
+        > span:nth-child(1) {
+            left: 0;
+            top: 5px;
+            transform: rotate(45deg);
+        }
+
+        > span:nth-child(2) {
+            left: calc(50% - 4px);
+            top: 5px;
+            transform: rotate(-45deg);
+        }
+
+        > span:nth-child(3) {
+            left: -50%;
+            opacity: 0;
+        }
+
+        > span:nth-child(4) {
+            left: 100%;
+            opacity: 0;
+        }
+
+        > span:nth-child(5) {
+            left: 0px;
+            top: 13px;
+            transform: rotate(-45deg);
+        }
+
+        > span:nth-child(6) {
+            left: calc(50% - 4px);
+            top: 13px;
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.mobile__nav.col {
+    background-color: #3C3F40;
+
+    > .mobile__nav-logo {
+        opacity: 0;
+    }
+
+    .mobile__nav-arrow {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.mobile__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    transform: translateX(-120%);
+    transition: all 0.22s ease-in-out;
+    z-index: 100;
+    overflow: scroll;
+    padding: 0;
+
+    &__menu {
+        transition: all 0.25s ease 0s;
+        opacity: 1;
+        padding: 135px 0 0 40px;
+        margin-top: 0;
+        margin-bottom: 16px;
+
+        > * {
+            cursor: pointer;
+            font-family: "Graphik-Medium";
+            font-size: 22px;
+            color: #3C3F40;
+            letter-spacing: 0;
+            line-height: 55px;
+            display: flex;
+            align-items: baseline;
+        }
+
+        &-why_copper,
+        &-industry,
+        &-resources {
+            > .icon {
+                transform: rotate(180deg);
+                position: relative;
+                left: 5px;
+            }
+        }
+
+        &-pricing,
+        &-demos {
+            > a {
+                color: rgb(60 , 63 , 64);
+                text-decoration: none;
+            }
+        }
+
+        &__buttons {
+            > * {
+                background-color: #FF3465;
+                box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+                border-radius: 100px;
+                font-family: "Graphik-Medium";
+                font-size: 14px;
+                color: #FFF;
+                text-align: center;
+                padding: 0 30px;
+                display: inline-flex;
+                border: 1px solid #FF3465;
+                padding: 12px 30px;
+                line-height: 14px;
+                text-decoration: none;
+                transition: all ease-in-out 0.2s;
+                margin-right: 18px;
+                margin-bottom: 8px;
+                margin-left: 0;
+                cursor: pointer;
+                font-weight: 500;
+
+                &:hover {
+                    color: #FF3465;
+                    background-color: #FFF;
+                    border: 1px solid #FFF;
+                    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+                }
+            }
+
+            &-try_free {
+                color: white;
+                margin-top: 32px;
+            }
+
+            &-login {
+                color: #FF3465;
+                margin-top: 32px;
+                background: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+
+    &__col {
+        &__why_copper,
+        &__industry,
+        &__resources {
+            position: absolute;
+            transform: translateX(-100%);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #3C3F40;
+            transition: all 0.22s ease-in-out;
+            padding: 90px 0 0 30px;
+            overflow: auto;
+            margin-bottom: 16px;
+
+            &-title {
+                font-size: 24px;
+                font-family: "Graphik-Medium";
+                padding-bottom: 24px;
+                display: inline-block;
+                color: #FFF;
+            }
+
+            &-link {
+                display: flex;
+                width: max-content;
+                font-size: 18px;
+                line-height: 50px;
+                color: #FFF;
+                text-decoration: none;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        > .active{
+            transform: translateX(0);
+        }
+    }
+}
+
+.mobile__overlay.active {
+    transform: translateX(0);
 }

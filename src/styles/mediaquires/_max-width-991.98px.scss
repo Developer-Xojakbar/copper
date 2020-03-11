@@ -1,0 +1,38 @@
+@media (max-width: 991.98px) {
+    body.stop_scrolling {
+        overflow: hidden;
+    }
+
+    .nav-banner {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 10px 30px;
+        min-height: 75px;
+    }
+
+    .mobile__nav_banner {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 10px 30px;
+        min-height: 75px;
+    }
+
+    .form {
+        &__image {
+            > img {
+                position: relative;
+                top: 0px;
+                left: 0px;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                width: 100% !important;
+            }
+        }
+    }
+
+    .md_banner {
+        &-background {
+            display: none;
+        }
+    }
+}

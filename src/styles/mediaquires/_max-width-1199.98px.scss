@@ -1,0 +1,11 @@
+@media (max-width: 1199.98px) {
+    .md_banner {
+        &-background {
+            top: 40%;
+            width: 160%;
+            max-width: 160%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}
