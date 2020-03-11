@@ -26,11 +26,23 @@
 
             > * {
                 display: inline-block;
-                max-height: 26px;
+                max-height: 40px;
                 max-width: 149px;
                 vertical-align: middle;
                 margin: 20px;
                 width: initial;
+            }
+
+            > img:nth-child(1) {
+                max-height: 26px;
+            }
+
+            > img:nth-child(3) {
+                max-height: 36px;
+            }
+
+            > img:nth-child(5) {
+                max-height: 25px;
             }
         }
     }
