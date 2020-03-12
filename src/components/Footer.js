@@ -1,16 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React , { useState } from 'react';
 import IconSVG from './IconSVG';
 
 const Footer = () => {
+    const [openLinks, setOpenLinks] = useState({});
 
-    const Links = ({ h_text , link}) => {
+    const handleOpenLink = (linkName) => {
+        if (openLinks[linkName] === "active") {
+            setOpenLinks({ ...openLinks, [linkName]: "" });
+        } else {
+            setOpenLinks({ ...openLinks, [linkName]: "active" });
+        }
+        console.log(openLinks);
+    }
+
+    const Links = (h_text , link) => {
         return (
-            <div className="footer__social__items__item">
-                <p className="footer__social__items__item-h">{h_text}</p>
-                {link.map((text) => {
+            <div className={"footer__social__items__item " + openLinks[h_text]}>
+                <p
+                    className="footer__social__items__item-h"
+                    onClick={() => { handleOpenLink(h_text) }}
+                >{h_text}</p>
+                {link.map((text , index) => {
                     return (
-                        <a className="footer__social__items__item-link" href="#">{text}</a>
+                        <a className="footer__social__items__item-link" href="#" key={index}>{text}</a>
                     );
                 })}
             </div>
@@ -39,8 +52,8 @@ const Footer = () => {
                 </div>
                 <div className="footer__social">
                     <div className="footer__social__items">
-                        <Links h_text={"Why Copper"} 
-                        link={[
+                        {Links ("Why Copper",
+                        [
                             "Organize contacts", 
                             "Track leads & deals",
                             "Manage projects",
@@ -49,9 +62,9 @@ const Footer = () => {
                             "Reporting & Insights",
                             "CRM on the go",
                             "See all features"
-                        ]} />
-                        <Links h_text={"Solutions"} 
-                        link={[
+                        ])}
+                        {Links ("Solutions",
+                        [
                             "Agency CRM", 
                             "Technology CRM",
                             "Consulting CRM",
@@ -59,27 +72,27 @@ const Footer = () => {
                             "Small Businesses",
                             "Mid-Market",
                             "Enterprise"
-                        ]} />
-                        <Links h_text={"CRM for G Suite"} 
-                        link={[
+                        ])}
+                        {Links ("CRM for G Suite",
+                        [
                             "G Suite CRM", 
                             "Gmail CRM",
                             "Google Sheets CRM",
                             "Official G Suite Partner",
                             "Chrome Store App",
                             "Android Mobile App"
-                        ]} />
-                        <Links h_text={"CRM Comparisons"} 
-                        link={[
+                        ])}
+                        {Links ("CRM Comparisons", 
+                        [
                             "Zoho Alternative",
                             "Pipedrive Alternative",
                             "Insightly Alternative",
                             "Zendesk Sell Alternative",
                             "Salesforce Alternative",
                             "More Comparisons"
-                        ]} />
-                        <Links h_text={"Integrations"} 
-                        link={[
+                        ])}
+                        {Links ("Integrations",
+                        [
                             "Slack",
                             "Zendesk",
                             "HubSpot",
@@ -87,21 +100,28 @@ const Footer = () => {
                             "Xero",
                             "Docusign",
                             "See all integrations"
-                        ]} />
-                        <Links h_text={"Learn"} 
-                        link={[
+                        ])}
+                        {Links ("Learn",
+                        [
                             "Blog",
                             "Webinars",
                             "Help Center",
                             "Business Tools",
                             "Community"
-                        ]} />
-                        <Links h_text={"Contact"} 
-                        link={[
+                        ])}
+                        {Links ("Contact",
+                        [
                             "Talk to Support",
                             "Talk to Sales",
                             "Become a Partner!"
-                        ]} />
+                        ])}
+                    </div>
+                    <div className="footer__social__icons">
+                        <a className="footer__social__icons-link" href="#"><IconSVG className="icon-facebook" iconName="icon-facebook" /></a>
+                        <a className="footer__social__icons-link" href="#"><IconSVG className="icon-twitter" iconName="icon-twitter" /></a>
+                        <a className="footer__social__icons-link" href="#"><IconSVG className="icon-linkedin" iconName="icon-linkedin" /></a>
+                        <a className="footer__social__icons-link" href="#"><IconSVG className="icon-instagram" iconName="icon-instagram" /></a>
+                        <a className="footer__social__icons-link" href="#"><IconSVG className="icon-you_tube" iconName="icon-you_tube" /></a>
                     </div>
                     <div className="footer__social__created">
                         <p className="footer__social__created-text-1">Copper is a trademark of Copper CRM, Inc., registered in the U.S. and in other countries.</p>

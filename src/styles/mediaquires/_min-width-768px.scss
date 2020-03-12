@@ -21,6 +21,10 @@
         }
     }
 
+    .mobile__nav_banner {
+        display: none;
+    }
+
     .nav {
         &__container {
             &__utility {
@@ -294,6 +298,10 @@
                         display: flex;
                     }
                 }
+            }
+
+            &__icons {
+                display: none;
             }
 
             &__created {

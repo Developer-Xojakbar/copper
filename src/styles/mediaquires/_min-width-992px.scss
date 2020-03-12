@@ -217,6 +217,14 @@
         }
     }
 
+    .mobile__nav {
+        display: none;
+    }
+
+    .mobile__ovrelay {
+        display: none;
+    }
+
     .inbox {
         &__context {
             padding: 120px 0 120px;
