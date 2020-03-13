@@ -1,7 +1,7 @@
 .footer-container {
-    background-color: #321E41;
-    color: #fff;
-    padding: 50px 0 0px;
+    background-color: $color-purple-50;
+    color: white;
+    padding: 2.5rem 0 0;
 }
 
 .footer {
@@ -10,30 +10,30 @@
     &__company {
         position: relative;
         margin-bottom: 0;
-        padding-right: 15px;
+        padding-right: 0.75rem;
 
         &__context {
             &-link {
                 display: flex;
                 width: min-content;
-                font-size: 48px;
+                font-size: 2.4rem;
                 font-family: "Graphik-Medium";
                 font-weight: 500;
-                line-height: 48px;
+                line-height: 2.4rem;
                 color: white;
                 text-decoration: none;
                 cursor: pointer;
                 background-color: transparent;
 
                 &:hover {
-                    color: #FF3465;
+                    color: $color-red-bckg;
                 }
             }
 
             &-address {
                 display: none;
-                margin-top: 16px;
-                margin-bottom: 16px;
+                margin-top: 0.8rem;
+                margin-bottom: 0.8rem;
                 font-style: normal;
                 line-height: inherit;
             }
@@ -43,21 +43,21 @@
             display: none !important;
             position: absolute;
             bottom: 0;
-            margin-top: 3px;
-            margin-bottom: 20px;
+            margin-top: 0.15rem;
+            margin-bottom: 1rem;
 
             &-link {
                 margin-right: 0;
                 text-decoration: none;
-                padding-right: 10px;
+                padding-right: 0.5rem;
                 fill: white;
                 font-weight: 500;
-                line-height: 26px;
+                line-height: 1.3rem;
                 cursor: pointer;
                 background-color: transparent;
 
                 &:hover {
-                    fill: #FF3465 ;
+                    fill: $color-red-bckg ;
                 }
             }
         }
@@ -65,16 +65,13 @@
 
     &__social {
         &__items {
-            display: -webkit-box;
             display: flex;
             flex-wrap: wrap;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
             flex-direction: column;
 
             &__item {
-                min-width: 153px;
-                font-size: 14px;
+                min-width: 7.65rem;
+                font-size: 0.7rem;
                 padding: 0;
                 font-family: "Graphik-Medium";
                 margin-top: 0;
@@ -82,50 +79,50 @@
                 &-h {
                     display: block;
                     cursor: pointer;
-                    border-bottom: thin solid #5B4B67;
+                    border-bottom: thin solid $color-purple-90;
                     position: relative;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    font-size: 16px;
+                    padding-top: 0.75rem;
+                    padding-bottom: 0.75rem;
+                    font-size: 0.8rem;
                     font-weight: 300;
                 }
 
                 &-link {
                     width: max-content;
-                    font-size: 13px;
+                    font-size: 0.65rem;
                     font-weight: 500;
                     font-family: "Graphik-Regular";
                     list-style: none;
                     display: none;
                     color: white;
                     text-decoration: none;
-                    line-height: 26px;
+                    line-height: 1.3rem;
                     cursor: pointer;
                     background-color: transparent;
 
                     &:hover {
-                        color: #FF3465;
+                        color: $color-red-bckg;
                     }
                 }
             }
         }
 
         &__icons {
-            margin: 30px 0 -10px 0;
+            margin: 1.5rem 0 -0.5rem 0;
 
             &-link {
-                margin-right: 10px;
+                margin-right: 0.5rem;
                 text-decoration: none;
-                fill: #FFF;
-                padding: 4px 10px 4px 0;
+                fill: white;
+                padding: 0.2rem 0.5rem 0.2rem 0;
                 flex-basis: 25%;
                 font-weight: 500;
-                line-height: 26px;
+                line-height: 1.3rem;
                 cursor: pointer;
                 background-color: transparent;
 
                 &:hover {
-                    fill: #FF3465 ;
+                    fill: $color-red-bckg ;
                 }
 
                 > * {
@@ -135,44 +132,42 @@
         }
 
         &__created {
-            background-color: #321E41;
+            background-color: $color-purple-50;
             height: auto;
-            display: -webkit-box;
+            
             display: flex;
             flex-wrap: wrap;
-            -webkit-box-align: center;
-            //align-items: center;
-            padding-top: 10px;
-            font-size: 16px;
-            line-height: 28px;
-            margin-top: 18px;
+            padding-top: 0.5rem;
+            font-size: 0.8rem;
+            line-height: 1.4rem;
+            margin-top: 0.9rem;
 
             &-text-1 {
                 flex-basis: 100%;
-                margin-bottom: 19px;
-                color: #FFF;
-                padding: 4px 10px 4px 0px;
+                margin-bottom: 0.95rem;
+                color: white;
+                padding: 0.2rem 0.5rem 0.2rem 0;
             }
 
             &-text-2 {
                 flex-basis: 50%;
-                margin-bottom: 19px;
-                color: #FFF;
-                padding: 4px 10px 4px 0px;
+                margin-bottom: 0.95rem;
+                color: white;
+                padding: 0.2rem 0.5rem 0.2rem 0;
             }
 
             &-link {
-                color: #FFF;
-                padding: 4px 0;
+                color: white;
+                padding: 0.2rem 0;
                 flex-basis: 25%;
                 text-decoration: none;
                 font-weight: 500;
-                line-height: 26px;
+                line-height: 1.3rem;
                 cursor: pointer;
                 background-color: transparent;
 
                 &:hover {
-                    color: #FF3465;
+                    color: $color-red-bckg;
                 }
             }
         }

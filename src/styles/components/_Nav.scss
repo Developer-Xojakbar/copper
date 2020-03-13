@@ -13,44 +13,37 @@
     padding: 0.5rem 1rem;
     text-align: center;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
+    z-index: 200;
 
     &__text {
         display: none;
         font-size: 0.8rem;
         color: white;
-        margin: 0px;
+        margin: 0;
         text-align: center;
         display: flex;
-        -webkit-box-align: center;
         align-items: center;
-        margin-right: 20px;
+        margin-right: 1rem;
     }
 
     &__link {
         display: inline-flex;
-        margin-right: 0px;
-        margin-bottom: 0px;
+        margin-right: 0;
+        margin-bottom: 0;
         padding: 0.5rem 1rem;
         background: transparent;
         border: 0.05rem solid white;
         box-shadow: none;
-        border-radius: 100px;
+        border-radius: 5rem;
         font-family: "Graphic-Medium";
         font-size: 0.7rem;
-        color: #FFF;
+        color: white;
         text-align: center;
         line-height: 0.7rem;
         text-decoration: none;
-        -webkit-transition: all ease-in-out 0.2s;
         transition: all ease-in-out 0.2s;
         margin-left: 0;
         cursor: pointer;
@@ -60,34 +53,31 @@
             border: 0.05rem solid $color-red-hover;
             color: white;
             text-decoration: none;
-            -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
-            box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+            -webkit-box-shadow: $color-shadow-2;
+            box-shadow: $color-shadow-2;
         }
     }
 }
 
 .mobile__nav_banner {
-    background: rgb(255, 52, 101);
+    background: $color-red-bckg;
     display: none;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     position: relative;
     text-align: center;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 10000;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
 
     &-text {
-        font-size: 16px;
-        color: #FFFFFF;
-        margin: 0px;
+        font-size: 0.8rem;
+        color: white;
+        margin: 0;
         text-align: center;
-        -webkit-box-align: center;
         align-items: center;
         display: flex;
         width: 60%;
@@ -95,19 +85,19 @@
     }
 
     &-link {
-        margin-right: 0px;
-        padding: 10px 20px;
-        margin-bottom: 0px;
+        margin-right: 0;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0;
         background: transparent;
-        border: 1px solid #FFF;
+        border: 0.05rem solid white;
         box-shadow: none;
-        border-radius: 100px;
+        border-radius: 5rem;
         font-family: "Graphik-Medium";
-        font-size: 14px;
-        color: #FFF;
+        font-size: 0.7rem;
+        color: white;
         text-align: center;
         display: inline-flex;
-        line-height: 14px;
+        line-height: 0.7rem;
         text-decoration: none;
         transition: all ease-in-out 0.2s;
         margin-left: 0;
@@ -115,32 +105,32 @@
         font-weight: 500;
 
         &:hover {
-            background: #ff4874;
-            border-color: #ff4874;
-            color: #FFF;
-            box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+            background: $color-red-hover;
+            border-color: $color-red-hover;
+            color: white;
+            box-shadow: $color-shadow-2;
         }
     }
 }
 
 .nav {
     transition: top 0.3s;
-    height: 60px;
+    height: 3rem;
     display: none;
 
     &__container {
         &__logo {
             > * {
-                height: 27px;
+                height: 1.35rem;
                 text-decoration: none;
                 color: $color-red-bckg;
-                line-height: 26px;
+                line-height: 1.3rem;
                 cursor: pointer;
                 background-color: transparent;
 
                 > .icon {
-                    width: 137px;
-                    height: 27px;
+                    width: 6.85rem;
+                    height: 1.35rem;
                 }
             } 
         }
@@ -149,9 +139,9 @@
             &-pricing,
             &-demos {
                 text-decoration: none;
-                color: rgb(255, 52, 101);
+                color: $color-red-bckg;
                 font-weight: 500;
-                line-height: 26px;
+                line-height: 1.3rem;
                 cursor: pointer;
                 background-color: transparent;
             }
@@ -159,34 +149,34 @@
 
         &__utility {
             &-try_free {
-                background-color: #FF3465;
-                -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
-                box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
-                border-radius: 100px;
+                background-color: $color-red-bckg;
+                -webkit-box-shadow: $color-shadow-2;
+                box-shadow: $color-shadow-2;
+                border-radius: 5rem;
                 font-family: "Graphik-Medium";
-                font-size: 14px;
-                color: #FFF;
+                font-size: 0.7rem;
+                color: white;
                 text-align: center;
-                padding: 12px 30px;
+                padding: 0.6rem 1.5rem;
                 display: inline-flex;
-                border: 1px solid #FF3465;
-                line-height: 14px;
+                border: 0.05rem solid $color-red-bckg;
+                line-height: 0.7rem;
                 text-decoration: none;
                 transition: all ease-in-out 0.2s;
-                margin-right: 18px;
-                margin-bottom: 8px;
+                margin-right: 0.9rem;
+                margin-bottom: 0.4rem;
                 margin-left: 0;
                 cursor: pointer;
 
                 font-weight: 500;
 
                 &:hover {
-                    background-color: #FFF;
-                    border: 1px solid #FFF;
-                    color: #FF3465;
+                    background-color: white;
+                    border: 0.05rem solid white;
+                    color: $color-red-bckg;
                     text-decoration: none;
-                    -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
-                    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+                    -webkit-box-shadow: $color-shadow-2;
+                    box-shadow: $color-shadow-2;
                 }
             }
 
@@ -194,7 +184,7 @@
                 text-decoration: none;
                 color: $color-red-bckg;
                 font-weight: 500;
-                line-height: 26px;
+                line-height: 1.3rem;
                 cursor: pointer;
 
                 background-color: transparent;
@@ -211,26 +201,26 @@
 .mobile__nav {
     transition: top 0.3s;
     display: block;
-    height: 60px;
-    background-color: #FFF;
+    height: 3rem;
+    background-color: white;
     position: fixed;
     width: 100%;
-    z-index: 105;
-    box-shadow: 0 6px 20px 0 rgba(60,63,64,0.07);
+    z-index: 200;
+    box-shadow: $color-shadow-7;
     padding: 0;
 
     &-logo {
         display: flex;
         position: absolute;
-        top: 22px;
-        left: 3px;
+        top: 1.1rem;
+        left: 0.15rem;
         z-index: 10;
         opacity: 1;
         transition: all 0.22s ease-in-out;
 
         > .icon {
-            height: 21px;
-            width: 137px;
+            height: 1.05rem;
+            width: 6.85rem;
             overflow: hidden;
             vertical-align: middle;
         }
@@ -241,13 +231,13 @@
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        left: 27px;
-        top: 15px;
+        left: 1.35rem;
+        top: 0.75rem;
         z-index: 10;
 
         > .icon {
-            height: 12px;
-            width: 32px;
+            height: 0.6rem;
+            width: 1.6rem;
             overflow: hidden;
             vertical-align: middle;
         }
@@ -255,36 +245,36 @@
 
     &-hamburger {
         z-index: 10;
-        width: 24px;
-        height: 18px;
+        width: 1.2rem;
+        height: 0.9rem;
         position: absolute;
-        top: 21px;
-        right: 15px;
+        top: 1.05rem;
+        right: 0.75rem;
         transform: rotate(0deg);
         transition: .5s ease-in-out;
         cursor: pointer;
 
         > span {
-            left: 0px;
-            border-radius: 20px 0 0 20px;
+            left: 0;
+            border-radius: 1rem 0 0 1rem;
             display: block;
             position: absolute;
-            height: 2px;
+            height: 0.1rem;
             width: 50%;
-            background: #FF3465;
+            background: $color-red-bckg;
             opacity: 1;
             transform: rotate(0deg);
             transition: .25s ease-in-out;
         }
 
         > span:nth-child(odd) {
-            left: 0px;
-            border-radius: 20px 0 0 20px;
+            left: 0;
+            border-radius: 1rem 0 0 1rem;
         }
 
         > span:nth-child(even) {
             left: 50%;
-            border-radius: 0 20px 20px 0;
+            border-radius: 0 1rem 1rem 0;
         }
 
         > span:nth-child(1),
@@ -294,12 +284,12 @@
 
         > span:nth-child(3),
         > span:nth-child(4) {
-            top: 8px;
+            top: 0.4rem;
         }
 
         > span:nth-child(5),
         > span:nth-child(6) {
-            top: 16px;
+            top: 0.8rem;
         }
 
         > span.white {
@@ -310,13 +300,13 @@
     &-hamburger.active {
         > span:nth-child(1) {
             left: 0;
-            top: 5px;
+            top: 0.25rem;
             transform: rotate(45deg);
         }
 
         > span:nth-child(2) {
             left: calc(50% - 4px);
-            top: 5px;
+            top: 0.25rem;
             transform: rotate(-45deg);
         }
 
@@ -331,21 +321,21 @@
         }
 
         > span:nth-child(5) {
-            left: 0px;
-            top: 13px;
+            left: 0;
+            top: 0.65rem;
             transform: rotate(-45deg);
         }
 
         > span:nth-child(6) {
             left: calc(50% - 4px);
-            top: 13px;
+            top: 0.65rem;
             transform: rotate(45deg);
         }
     }
 }
 
 .mobile__nav.col {
-    background-color: #3C3F40;
+    background-color: $color-grayscale-62;
 
     > .mobile__nav-logo {
         opacity: 0;
@@ -363,7 +353,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #FFF;
+    background-color: white;
     transform: translateX(-120%);
     transition: all 0.22s ease-in-out;
     z-index: 100;
@@ -375,15 +365,15 @@
         opacity: 1;
         padding: 135px 0 0 40px;
         margin-top: 0;
-        margin-bottom: 16px;
+        margin-bottom: 0.8rem;
 
         > * {
             cursor: pointer;
             font-family: "Graphik-Medium";
-            font-size: 22px;
-            color: #3C3F40;
+            font-size: 1.1rem;
+            color: $color-grayscale-62;
             letter-spacing: 0;
-            line-height: 55px;
+            line-height: 2.75rem;
             display: flex;
             align-items: baseline;
         }
@@ -394,56 +384,56 @@
             > .icon {
                 transform: rotate(180deg);
                 position: relative;
-                left: 5px;
+                left: 0.25rem;
             }
         }
 
         &-pricing,
         &-demos {
             > a {
-                color: rgb(60 , 63 , 64);
+                color: $color-grayscale-62;
                 text-decoration: none;
             }
         }
 
         &__buttons {
             > * {
-                background-color: #FF3465;
-                box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
-                border-radius: 100px;
+                background-color: $color-red-bckg;
+                box-shadow: $color-shadow-2;
+                border-radius: 5rem;
                 font-family: "Graphik-Medium";
-                font-size: 14px;
-                color: #FFF;
+                font-size: 0.7rem;
+                color: white;
                 text-align: center;
-                padding: 0 30px;
+                padding: 0 1.5rem;
                 display: inline-flex;
-                border: 1px solid #FF3465;
-                padding: 12px 30px;
-                line-height: 14px;
+                border: 0.05rem solid $color-red-bckg;
+                padding: 0.6rem 1.5rem;
+                line-height: 0.7rem;
                 text-decoration: none;
                 transition: all ease-in-out 0.2s;
-                margin-right: 18px;
-                margin-bottom: 8px;
+                margin-right: 0.9rem;
+                margin-bottom: 0.4rem;
                 margin-left: 0;
                 cursor: pointer;
                 font-weight: 500;
 
                 &:hover {
-                    color: #FF3465;
-                    background-color: #FFF;
-                    border: 1px solid #FFF;
-                    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+                    color: $color-red-bckg;
+                    background-color: white;
+                    border: 0.05rem solid white;
+                    box-shadow: $color-shadow-2;
                 }
             }
 
             &-try_free {
                 color: white;
-                margin-top: 32px;
+                margin-top: 1.6rem;
             }
 
             &-login {
-                color: #FF3465;
-                margin-top: 32px;
+                color: $color-red-bckg;
+                margin-top: 1.6rem;
                 background: transparent;
                 box-shadow: none;
             }
@@ -460,26 +450,26 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: #3C3F40;
+            background-color: $color-grayscale-62;
             transition: all 0.22s ease-in-out;
-            padding: 90px 0 0 30px;
+            padding: 4.5rem 0 0 1.5rem;
             overflow: auto;
-            margin-bottom: 16px;
+            margin-bottom: 0.8rem;
 
             &-title {
-                font-size: 24px;
+                font-size: 1.2rem;
                 font-family: "Graphik-Medium";
-                padding-bottom: 24px;
+                padding-bottom: 1.2rem;
                 display: inline-block;
-                color: #FFF;
+                color: white;
             }
 
             &-link {
                 display: flex;
                 width: max-content;
-                font-size: 18px;
-                line-height: 50px;
-                color: #FFF;
+                font-size: 0.9rem;
+                line-height: 2.5rem;
+                color: white;
                 text-decoration: none;
                 font-weight: 500;
                 cursor: pointer;

@@ -1,16 +1,13 @@
 .btm_banner {
-    background-color: #56468f;
+    background-color: $color-purple-143;
     min-height: auto;
     background-size: cover;
     position: relative;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center;
-    color: #FFF;
-    padding: 60px 0 60px;
+    color: white;
+    padding: 3rem 0 3rem;
 
     &-image {
         top: 0;
@@ -36,81 +33,80 @@
             z-index: 10;
             display: flex;
             flex-wrap: wrap;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
+            
+            
             flex-direction: column;
-            -webkit-box-pack: center;
+            
             justify-content: center;
             position: relative;
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
 
             &-pre {
                 color: white;
-                font-size: 14px;
+                font-size: 0.7rem;
                 text-transform: uppercase;
                 font-family: 'Roboto Mono', monospace;
                 font-weight: 500;
                 overflow-y: hidden;
-                margin-bottom: 16px;
+                margin-bottom: 0.8rem;
                 overflow: auto;
 
                 &:before {
-                    border-bottom: 2px solid #FFF;
-                    content: '';
-                    margin-right: 8px;
-                    width: 34px;
+                    border-bottom: 0.1rem solid white;
+                    margin-right: 0.4rem;
+                    width: 1.7rem;
                     display: block;
                     position: relative;
                     float: left;
-                    top: 10px;
-                    height: 2px;
+                    top: 0.5rem;
+                    height: 0.1rem;
+                    content: '';
                 }
             }
 
             &-text {
-                max-width: 420px;
+                max-width: 21rem;
                 text-align: left;
 
-                font-size: 20px;
-                line-height: 30px;
-                margin: 16px 0;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin: 0.8rem 0;
             }
 
             &__buttons {
-                margin-top: 35px;
+                margin-top: 1.75rem;
                 display: flex;
                 flex-wrap: wrap;
-                -webkit-box-pack: center;
                 justify-content: center;
 
                 > *  {
-                    background-color: #FF3465;
-                    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
-                    border-radius: 100px;
+                    background-color: $color-red-bckg;
+                    box-shadow: $color-shadow-2;
+                    border-radius: 5rem;
                     font-family: "Graphik-Medium";
-                    font-size: 14px;
+                    font-size: 0.7rem;
                     color: white;
                     text-align: center;
                     display: inline-flex;
-                    border: 1px solid $color-red-bckg;
-                    padding: 12px 30px;
-                    line-height: 14px;
+                    border: 0.05rem solid $color-red-bckg;
+                    padding: 0.6rem 1.5rem;
+                    line-height: 0.7rem;
                     text-decoration: none;
                     transition: all ease-in-out 0.2s;
-                    margin-right: 18px;
-                    margin-bottom: 8px;
+                    margin-right: 0.9rem;
+                    margin-bottom: 0.4rem;
                     margin-left: 0;
                     cursor: pointer;
                     font-weight: 500;
 
                     &:hover {
-                        background-color: #FFF;
-                        border: 1px solid #FFF;
+                        background-color: white;
+                        border: 0.05rem solid white;
                         color: $color-red-bckg;
                         text-decoration: none;
-                        box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+                        box-shadow: $color-shadow-2;
                     }
                 }
 

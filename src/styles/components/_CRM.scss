@@ -1,42 +1,41 @@
 .crm-container {
-    padding: 60px 0 60px;
-    padding-bottom: 138px !important;
+    padding: 3rem 0 3rem;
+    padding-bottom: 6.9rem !important;
 }
 
 .crm {
     > * {
-        padding-bottom: 60px;
+        padding-bottom: 3rem;
         display: flex;
-        margin-right: -15px;
-        margin-left: -15px;
+        margin-right: -0.75rem;
+        margin-left: -0.75rem;
     }
 
     &-col {
         text-align: center;
-        -webkit-box-align: center;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
         position: relative;
         width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
     }
 
     &__item {
         &-image {
             position: relative;
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
 
             &-col {
                 transition: all 500ms linear;
-                transform: translate3d(0px, 100px, 0px);
+                transform: translate3d(0, 5rem, 0);
                 position: relative;
                 padding: 0;
                 margin: 7%;
-                margin-top: 60px;
+                margin-top: 3rem;
                 max-width: 60vw;
                 margin-left: auto;
                 margin-right: auto;
@@ -57,7 +56,7 @@
 
             &-col.visible {
                 opacity: 1;
-                transform: translate3d(0px, 0px, 0px);
+                transform: translate3d(0, 0, 0);
             }
         }
 
@@ -70,13 +69,13 @@
             justify-content: center;
             position: relative;
             width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
+            padding-right: 0.75rem;
+            padding-left: 0.75rem;
 
             &-col-text {
-                font-size: 20px;
-                line-height: 30px;
-                margin: 16px 0;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin: 0.8rem 0;
             }
         }
     }
