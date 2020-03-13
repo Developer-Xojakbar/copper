@@ -1,20 +1,18 @@
 @media (min-width: 992px) {
     .container {
         > * {
-            max-width: 960px;
+            max-width: 48rem;
         }
     }
 
     .container > .nav {
-        max-width: 1200px;
+        max-width: 60rem;
         margin: 0 auto;
         background-color: white;
-        box-shadow: 0 6px 20px 0 rgba(60,63,64,0.07);
+        box-shadow: $color-shadow-7;
         width: 100%;
         display: flex;
-        height: 100px;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
+        height: 5rem;
         align-items: center;
         z-index: 100;
     }
@@ -24,62 +22,50 @@
             display: flex;
 
             &__logo {
-                width: 220px;
-                display: -webkit-box;
-                display: -ms-flexbox;
+                width: 11rem;
                 display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
                 align-items: center;
             }
 
             &__links {
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
                 align-items: center;
                 list-style: none;
                 font-family: 'Graphik-Medium';
-                font-size: 14px;
+                font-size: 0.7rem;
                 padding: 0;
                 margin: 0;
-                line-height: 20px;
-                -webkit-box-flex: 2;
-                -ms-flex: 2;
+                line-height: 1rem;
                 flex: 2;
                 z-index: 2;
-                min-height: 100px;
+                min-height: 5rem;
 
                 &-why_copper,
                 &-industry,
                 &-resources {
-                    line-height: 100px;
+                    line-height: 5rem;
                     cursor: pointer;
                     margin-top: 0;
                     margin-bottom: 0;
-                    margin-right: 40px;
+                    margin-right: 2rem;
                     position: relative;
 
                     > .icon {
-                        transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+                        transition: transform 0.25s ease-in-out;
                         vertical-align: middle;
-                        width: 6px;
-                        height: 4px;
-                        margin-left: 5px;
+                        width: 0.3rem;
+                        height: 0.2rem;
+                        margin-left: 0.25rem;
                     }
 
                     &:hover:after {
-                        height: 4px;
+                        height: 0.2rem;
                         position: absolute;
                         left: 0;
                         content: '';
                         width: 100%;
-                        -webkit-box-shadow: 0px 4px 0px 0px #ff3465;
-                        box-shadow: 0px 4px 0px 0px #ff3465;
-                        bottom: 4px;
-                        -webkit-transition: all ease-in-out 0.15s;
+                        box-shadow: $color-shadow-red;
+                        bottom: 0.2rem;
                         transition: all ease-in-out 0.15s;
                     }
                 }
@@ -89,20 +75,18 @@
                 &-resources.active {
                     > .icon {
                         position: relative;
-                        left: 1px;
+                        left: 0.05rem;
                         transform: rotate(180deg);
                     }
 
                     &:after {
-                        height: 4px;
+                        height: 0.2rem;
                         position: absolute;
                         left: 0;
                         content: '';
                         width: 100%;
-                        -webkit-box-shadow: 0px 4px 0px 0px #ff3465;
-                        box-shadow: 0px 4px 0px 0px #ff3465;
-                        bottom: 4px;
-                        -webkit-transition: all ease-in-out 0.15s;
+                        box-shadow: $color-shadow-red;
+                        bottom: 0.2rem;
                         transition: all ease-in-out 0.15s;
                     }
                 }
@@ -111,68 +95,57 @@
                 &-demos {
                     display: block;
                     color: $color-grayscale-62;
-                    margin-right: 40px;
+                    margin-right: 2rem;
                 }
             }
 
             &__utility {
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
                 align-items: center;
                 list-style: none;
                 padding: 0;
                 margin: 0;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
                 justify-content: flex-end;
 
                 &-login {
-                    margin-right: 18px;
+                    margin-right: 0.9rem;
                     font-family: 'Graphik-Medium';
-                    font-size: 14px;
+                    font-size: 0.7rem;
                     color: $color-red-bckg;
-                    line-height: 20px;
+                    line-height: 1rem;
                 }
             }
 
             &__dropdown-why_copper,
             &__dropdown-industry,
             &__dropdown-resources {
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: grid;
                 grid-template-columns: repeat(3 , 1fr);
                 grid-template-rows: 1fr;
                 visibility: hidden;
                 position: absolute;
-                padding: 50px;
+                padding: 2.5rem;
                 opacity: 0;
-                -webkit-transition: all ease-in-out 0.15s;
                 transition: all ease-in-out 0.15s;
-                transform: translateY(calc(100% - 25px));
-                background-color: #fff;
-                box-shadow: 0 6px 20px 0 rgba(60,63,64,0.07);
+                transform: translateY(calc(100% - 1.25rem));
+                background-color: white;
+                box-shadow: $color-shadow-7;
                 bottom: 0;
                 width: 100%;
-                max-width: 1200px;
-                margin-left: -45px;
+                max-width: 60rem;
+                margin-left: -2.25rem;
 
                 .item {
                     display: flex;
-                    -webkit-box-align: start;
-                    -ms-flex-align: start;
                     align-items: flex-start;
                     padding: 0;
                     list-style: none;
-                    margin-right: 100px;
+                    margin-right: 5rem;
                     font-family: "Graphik-Medium";
-                    font-size: 14px;
+                    font-size: 0.7rem;
                     color: $color-grayscale-62;
-                    line-height: 20px;
-                    margin-bottom: 40px;
+                    line-height: 1rem;
+                    margin-bottom: 2rem;
                     transition: color 0.1s ease-in-out;
                     text-decoration: none;
                     font-weight: 500;
@@ -180,19 +153,19 @@
                     background-color: transparent;
 
                     &__icon {
-                        width: 35px;
-                        margin-right: 13px;
-                        margin-bottom: -3px;
+                        width: 1.75rem;
+                        margin-right: 0.65rem;
+                        margin-bottom: -0.15rem;
                     }
                     
                     &__text {
                         &-black {
-                            margin-bottom: 4px;
+                            margin-bottom: 0.2rem;
                         }    
                         &-gray {
-                            font-size: 14px;
+                            font-size: 0.7rem;
                             color: $color-grayscale-178;
-                            line-height: 21px;
+                            line-height: 1.05rem;
                             font-family: "Graphik-Regular";
                         }
                     }
@@ -224,7 +197,7 @@
 
     .inbox {
         &__context {
-            padding: 120px 0 120px;
+            padding: 6rem 0 6rem;
         }
     }
 
@@ -235,19 +208,19 @@
         }
 
         &__context {
-            padding: 120px 0;
+            padding: 6rem 0;
         }
     }
 
     .crm {
         > * {
-            padding-bottom: 120px;
+            padding-bottom: 6rem;
         }
     }
 
     .tools {
         &__top {
-            margin-bottom: 120px;
+            margin-bottom: 6rem;
         }
     }
 

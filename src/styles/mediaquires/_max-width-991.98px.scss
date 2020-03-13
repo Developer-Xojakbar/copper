@@ -1,7 +1,7 @@
 @media (max-width: 991.98px) {
     .container {
         > * {
-            max-width: 890px;
+            max-width: 44.5rem;
         }
     }
 
@@ -10,24 +10,22 @@
     }
 
     .nav-banner {
-        -webkit-box-pack: justify;
         justify-content: space-between;
-        padding: 10px 30px;
-        min-height: 75px;
+        padding: 0.5rem 1.5rem;
+        min-height: 3.75rem;
     }
 
     .mobile__nav_banner {
-        -webkit-box-pack: justify;
         justify-content: space-between;
-        padding: 10px 30px;
-        min-height: 75px;
+        padding: 0.5rem 1.5rem;
+        min-height: 3.75rem;
     }
 
     .form {
         &__image {
             > img {
                 position: relative;
-                top: 0px;
+                top: 0;
                 -webkit-transform: translateY(0);
                 transform: translateY(0);
                 width: 100% !important;
@@ -56,7 +54,7 @@
                     width: 100% !important;
                     max-height: none !important;
                     height: auto !important;
-                    margin-top: 30px;
+                    margin-top: 1.5rem;
                 }
             }
         }
