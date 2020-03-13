@@ -1,0 +1,93 @@
+/*****************Context****************/
+.ext-context {
+    @extend .ext-static_container;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/****************Container**************/
+.ext-static_container {
+    position: relative;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+/*****************Text******************/
+.ext-text-1r-1_5r-0_8r-auto {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0.8rem auto;
+}
+
+.ext-text-1r-1_5r-0_8r-0 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0.8rem 0;
+}
+/*****************Link******************/
+.ext-link-medium { 
+    font-family: "Graphik-Medium";
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ext-link-regular { 
+    font-family: "Graphik-Regular";
+    text-decoration: none;
+    cursor: pointer;
+}
+/****************Buttons****************/
+.ext-static_button { 
+    background-color: $color-red-bckg;
+    box-shadow: $color-shadow-2;
+    border-radius: 5rem;
+    font-family: "Graphik-Medium";
+    font-size: 0.7rem;
+    color: white;
+    display: inline-flex;
+    border: 0.05rem solid $color-red-bckg;
+    line-height: 0.7rem;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+    margin-right: 0.9rem;
+    margin-bottom: 0.4rem;
+    margin-left: 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.ext-button-0_6r-1_5r {
+    @extend .ext-static_button;
+    padding: 0.6rem 1.5rem;
+    text-align: center;
+}
+
+.ext-button-0_5r-1r { 
+    @extend .ext-static_button;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+/***************Button_Hover************/
+.ext-static_button-hover {
+    background-color: white;
+    border: 0.05rem solid white;
+    color: $color-red-bckg;
+    text-decoration: none;
+    box-shadow: $color-shadow-2;
+}
+
+.ext-static_button-red-bckg {
+    color: white;
+    background-color: $color-red-bckg;
+    border: 0.05rem solid $color-red-bckg;
+    text-decoration: none;
+    box-shadow: $color-shadow-2;
+}
+
+.ext-static_button-red-hover {
+    background: $color-red-hover;
+    border: 0.05rem solid $color-red-hover;
+    color: white;
+    text-decoration: none;
+    box-shadow: $color-shadow-2;
+}

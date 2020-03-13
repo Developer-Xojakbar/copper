@@ -14,15 +14,13 @@
 
         &__context {
             &-link {
+                @extend .ext-link-medium;
                 display: flex;
                 width: min-content;
                 font-size: 2.4rem;
-                font-family: "Graphik-Medium";
                 font-weight: 500;
                 line-height: 2.4rem;
                 color: white;
-                text-decoration: none;
-                cursor: pointer;
                 background-color: transparent;
 
                 &:hover {
@@ -88,16 +86,14 @@
                 }
 
                 &-link {
+                    @extend .ext-link-regular;
                     width: max-content;
                     font-size: 0.65rem;
                     font-weight: 500;
-                    font-family: "Graphik-Regular";
                     list-style: none;
                     display: none;
                     color: white;
-                    text-decoration: none;
                     line-height: 1.3rem;
-                    cursor: pointer;
                     background-color: transparent;
 
                     &:hover {
@@ -134,7 +130,6 @@
         &__created {
             background-color: $color-purple-50;
             height: auto;
-            
             display: flex;
             flex-wrap: wrap;
             padding-top: 0.5rem;
@@ -142,18 +137,20 @@
             line-height: 1.4rem;
             margin-top: 0.9rem;
 
-            &-text-1 {
-                flex-basis: 100%;
+            .context {
                 margin-bottom: 0.95rem;
                 color: white;
                 padding: 0.2rem 0.5rem 0.2rem 0;
             }
 
+            &-text-1 {
+                @extend .context;
+                flex-basis: 100%;
+            }
+
             &-text-2 {
+                @extend .context;
                 flex-basis: 50%;
-                margin-bottom: 0.95rem;
-                color: white;
-                padding: 0.2rem 0.5rem 0.2rem 0;
             }
 
             &-link {

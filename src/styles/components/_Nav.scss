@@ -30,31 +30,15 @@
     }
 
     &__link {
-        display: inline-flex;
+        background: transparent;
+        box-shadow: none;
+        border: 0.05rem solid white;
         margin-right: 0;
         margin-bottom: 0;
-        padding: 0.5rem 1rem;
-        background: transparent;
-        border: 0.05rem solid white;
-        box-shadow: none;
-        border-radius: 5rem;
-        font-family: "Graphic-Medium";
-        font-size: 0.7rem;
-        color: white;
-        text-align: center;
-        line-height: 0.7rem;
-        text-decoration: none;
-        transition: all ease-in-out 0.2s;
-        margin-left: 0;
-        cursor: pointer;
+        @extend .ext-button-0_5r-1r;x
 
         &:hover {
-            background: $color-red-hover;
-            border: 0.05rem solid $color-red-hover;
-            color: white;
-            text-decoration: none;
-            -webkit-box-shadow: $color-shadow-2;
-            box-shadow: $color-shadow-2;
+            @extend .ext-static_button-red-hover;
         }
     }
 }
@@ -85,30 +69,17 @@
     }
 
     &-link {
-        margin-right: 0;
-        padding: 0.5rem 1rem;
-        margin-bottom: 0;
         background: transparent;
-        border: 0.05rem solid white;
         box-shadow: none;
-        border-radius: 5rem;
-        font-family: "Graphik-Medium";
-        font-size: 0.7rem;
-        color: white;
+        border: 0.05rem solid white;
+        margin-right: 0;
+        margin-bottom: 0;
         text-align: center;
-        display: inline-flex;
-        line-height: 0.7rem;
-        text-decoration: none;
-        transition: all ease-in-out 0.2s;
-        margin-left: 0;
-        cursor: pointer;
-        font-weight: 500;
+        padding: 0.5rem 1rem;
+        @extend .ext-button-0_5r-1r;
 
         &:hover {
-            background: $color-red-hover;
-            border-color: $color-red-hover;
-            color: white;
-            box-shadow: $color-shadow-2;
+            @extend .ext-static_button-red-hover;
         }
     }
 }
@@ -149,34 +120,10 @@
 
         &__utility {
             &-try_free {
-                background-color: $color-red-bckg;
-                -webkit-box-shadow: $color-shadow-2;
-                box-shadow: $color-shadow-2;
-                border-radius: 5rem;
-                font-family: "Graphik-Medium";
-                font-size: 0.7rem;
-                color: white;
-                text-align: center;
-                padding: 0.6rem 1.5rem;
-                display: inline-flex;
-                border: 0.05rem solid $color-red-bckg;
-                line-height: 0.7rem;
-                text-decoration: none;
-                transition: all ease-in-out 0.2s;
-                margin-right: 0.9rem;
-                margin-bottom: 0.4rem;
-                margin-left: 0;
-                cursor: pointer;
-
-                font-weight: 500;
+                @extend .ext-button-0_6r-1_5r;
 
                 &:hover {
-                    background-color: white;
-                    border: 0.05rem solid white;
-                    color: $color-red-bckg;
-                    text-decoration: none;
-                    -webkit-box-shadow: $color-shadow-2;
-                    box-shadow: $color-shadow-2;
+                    @extend .ext-static_button-hover;
                 }
             }
 
@@ -186,7 +133,6 @@
                 font-weight: 500;
                 line-height: 1.3rem;
                 cursor: pointer;
-
                 background-color: transparent;
 
                 &:hover {
@@ -398,31 +344,10 @@
 
         &__buttons {
             > * {
-                background-color: $color-red-bckg;
-                box-shadow: $color-shadow-2;
-                border-radius: 5rem;
-                font-family: "Graphik-Medium";
-                font-size: 0.7rem;
-                color: white;
-                text-align: center;
-                padding: 0 1.5rem;
-                display: inline-flex;
-                border: 0.05rem solid $color-red-bckg;
-                padding: 0.6rem 1.5rem;
-                line-height: 0.7rem;
-                text-decoration: none;
-                transition: all ease-in-out 0.2s;
-                margin-right: 0.9rem;
-                margin-bottom: 0.4rem;
-                margin-left: 0;
-                cursor: pointer;
-                font-weight: 500;
+                @extend .ext-button-0_6r-1_5r;
 
                 &:hover {
-                    color: $color-red-bckg;
-                    background-color: white;
-                    border: 0.05rem solid white;
-                    box-shadow: $color-shadow-2;
+                    @extend .ext-static_button-hover;
                 }
             }
 

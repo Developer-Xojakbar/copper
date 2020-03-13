@@ -4,10 +4,7 @@
 
 .inbox {
     &__top {
-        position: relative;
-        width: 100%;
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
+        @extend .ext-static_container;
 
         &-text {
             text-align: center !important;
@@ -55,15 +52,12 @@
     }
 
     &__context {
+        @extend .ext-static_container;
         text-align: center;
         padding: 3.5rem 0 3rem;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
-        width: 100%;
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
 
         > * {
             text-align: center;
@@ -73,10 +67,7 @@
 
         &-h ,
         &-text {
-            position: relative;
-            width: 100%;
-            padding-right: 0.75rem;
-            padding-left: 0.75rem;
+            @extend .ext-static_container;
         }
 
         &-text {
@@ -92,30 +83,11 @@
             justify-content: center;
 
             > * {
-                background-color: $color-red-bckg;
-                box-shadow: $color-shadow-2;
-                border-radius: 5rem;
-                font-family: "Graphik-Medium";
-                font-size: 0.7rem;
-                font-weight: 500;
-                color: white;
-                text-align: center;
-                display: inline-flex;
-                border: 0.05rem solid $color-red-bckg;
-                padding: 0.6rem 1.5rem;
-                line-height: 0.7rem;
-                text-decoration: none;
-                transition: all ease-in-out 0.2s;
-                margin-right: 0.9rem;
-                margin-left: 0;
-                cursor: pointer;
+                margin-bottom: 0;
+                @extend .ext-static_button;
 
                 &:hover {
-                    background-color: white;
-                    border: 0.05rem solid white;
-                    color: $color-red-bckg;
-                    text-decoration: none;
-                    box-shadow: $color-shadow-2;
+                    @extend .ext-static_button-hover;
                 }
             }
 

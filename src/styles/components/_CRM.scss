@@ -12,22 +12,16 @@
     }
 
     &-col {
+        @extend .ext-static_container;
         text-align: center;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
-        width: 100%;
-        padding-right: 0.75rem;
-        padding-left: 0.75rem;
     }
 
     &__item {
         &-image {
-            position: relative;
-            width: 100%;
-            padding-right: 0.75rem;
-            padding-left: 0.75rem;
+            @extend .ext-static_container;
 
             &-col {
                 transition: all 500ms linear;
@@ -61,21 +55,10 @@
         }
 
         &__context {
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            flex-direction: column;
-            -webkit-box-pack: center;
-            justify-content: center;
-            position: relative;
-            width: 100%;
-            padding-right: 0.75rem;
-            padding-left: 0.75rem;
+            @extend .ext-context;
 
             &-col-text {
-                font-size: 1rem;
-                line-height: 1.5rem;
-                margin: 0.8rem 0;
+                @extend .ext-text-1r-1_5r-0_8r-0;
             }
         }
     }

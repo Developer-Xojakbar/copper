@@ -12,14 +12,11 @@
         margin-right: auto;
 
         &-h {
-            width: 100%;
+            @extend .ext-static_container;
             text-align: center;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-            position: relative;
-            padding-right: 0.75rem;
-            padding-left: 0.75rem;
         }
     }
 
@@ -31,12 +28,9 @@
         margin-left: -0.75rem;
 
         &-item {
+            @extend .ext-static_container;
             margin-bottom: 1.5rem;
             display: flex;
-            position: relative;
-            width: 100%;
-            padding-right: 0.75rem;
-            padding-left: 0.75rem;
 
             &-icon {
                 width: 1.75rem;
