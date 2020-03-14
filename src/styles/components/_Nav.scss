@@ -315,7 +315,7 @@
 
         > * {
             cursor: pointer;
-            font-family: "Graphik-Medium";
+            font-family: $font-basic;
             font-size: 1.1rem;
             color: $color-grayscale-62;
             letter-spacing: 0;
@@ -383,7 +383,7 @@
 
             &-title {
                 font-size: 1.2rem;
-                font-family: "Graphik-Medium";
+                font-family: $font-basic;
                 padding-bottom: 1.2rem;
                 display: inline-block;
                 color: white;

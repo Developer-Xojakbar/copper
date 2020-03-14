@@ -26,13 +26,13 @@
 }
 /*****************Link******************/
 .ext-link-medium { 
-    font-family: "Graphik-Medium";
+    font-family: $font-basic;
     text-decoration: none;
     cursor: pointer;
 }
 
 .ext-link-regular { 
-    font-family: "Graphik-Regular";
+    font-family: $font-basic;
     text-decoration: none;
     cursor: pointer;
 }
@@ -41,7 +41,7 @@
     background-color: $color-red-bckg;
     box-shadow: $color-shadow-2;
     border-radius: 5rem;
-    font-family: "Graphik-Medium";
+    font-family: $font-basic;
     font-size: 0.7rem;
     color: white;
     display: inline-flex;

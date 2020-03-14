@@ -31,7 +31,7 @@
                 display: flex;
                 align-items: center;
                 list-style: none;
-                font-family: 'Graphik-Medium';
+                font-family: $font-basic;
                 font-size: 0.7rem;
                 padding: 0;
                 margin: 0;
@@ -109,7 +109,7 @@
 
                 &-login {
                     margin-right: 0.9rem;
-                    font-family: 'Graphik-Medium';
+                    font-family: $font-basic;
                     font-size: 0.7rem;
                     color: $color-red-bckg;
                     line-height: 1rem;
@@ -141,7 +141,7 @@
                     padding: 0;
                     list-style: none;
                     margin-right: 5rem;
-                    font-family: "Graphik-Medium";
+                    font-family: $font-basic;
                     font-size: 0.7rem;
                     color: $color-grayscale-62;
                     line-height: 1rem;
@@ -166,7 +166,7 @@
                             font-size: 0.7rem;
                             color: $color-grayscale-178;
                             line-height: 1.05rem;
-                            font-family: "Graphik-Regular";
+                            font-family: $font-basic;
                         }
                     }
                 }
